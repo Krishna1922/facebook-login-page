@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            padding: 0;
+            margin: 0;
+            height: 80px;
+            filter: invert(10%);
+        }
+         .main{
+            display: block;
+            text-align: center;
+        }
+        .login{
+            background-color: #1877f2;
+            width: 351px;
+            padding: 9px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 5px;
+
+        } 
+        p,h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.3rem;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container{
+            
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        input{
+            margin: 8px 0;
+            width: 330px;
+            padding: 10px;
+        }
+        
+        .forgot{
+            color: #1877f2;
+            margin-top: 17px;
+            cursor: pointer;
+        }
+        .forgot:hover{
+            text-decoration: underline;
+        }
+        .CNA{
+            color: white;
+            background-color: #42b72a;
+            padding: 15px;
+            margin: 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .CNA:hover,.login:hover{
+           opacity: .8;
+        }
+        @media (max-width:800px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .left{
+                
+                align-items: center;
+            }
+            .right{
+                margin-top: 15px;
+            }
+            
+        }
+        @media(max-width:450px){
+            .right,input,.login{
+                align-items: center;
+                width: 100%;
+            }
+            .right{
+                margin-top: 15px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="./kisspng-facebook-social-network-advertising-like-button-so-facebook-clipart-5adbe14404e706.6415090015243594920201.png" alt="">
+            <h1>Recent logins</h2>
+            <p>Click your picture or add an account.</p>
+
+        </div>
+        <div class="right" >
+            <form action="" method="post">
+                <input type="email" name="email" placeholder=" Email address">
+                <input type="password" name="password" placeholder=" password">
+                <div class="main">
+                    <button type="submit" class="login">Login</button>
+                    <div class="forgot">Forgotten Password?</div>
+                    <hr>
+                    <button type="submit" class="CNA">Create new account</button>
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
