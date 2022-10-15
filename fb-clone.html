@@ -44,6 +44,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f0f2f5;
+            flex-direction: column;
         }
         .container{
             
@@ -98,6 +99,70 @@
         }
         .CNA:hover,.login:hover{
            opacity: .8;
+        }
+
+        footer {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 20px;
+            padding-bottom: 60px;
+            direction: 1tr;
+            line-height: 1.34;
+            color: #1c1e21;
+            width: 100%;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .footer_container {
+            color: #737373;
+            margin: 0 auto;
+            width: 980px;
+        }
+        .footer_container * li {
+            list-style: none;
+        }
+        .footer_languages {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 8px;
+            gap: 16px;
+            font-size: smaller;
+        }
+        .footer_languages ul li {
+            padding-left: 10px;
+            font-size: 12px;
+            color: #737373;
+        }
+        .footer_languages ul li:hover {
+            color: #8a8d91;;
+        }
+        .content_curve {
+            border-bottom: 1px solid #dddfe2;
+            font-size: 1px;
+            height: 8px;
+            margin-bottom: 8px;
+        }
+        .footer_children {
+            margin-top: 16px;
+            margin-bottom: 32px;
+            /* line-height: 1.6; */
+            line-height: 0.6;
+            color: #737373;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 18px;
+            font-size: small;
+        }
+        .copyright {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 11px;
+            color: #737373;;
         }
         @media (max-width:800px){
             .container{
@@ -154,5 +219,55 @@
         
     </div>
     
+    <footer>
+        <div class="footer_container">
+            <ul class="footer_languages">
+                <li>English (UK)</li>
+                <li>தமிழ்</li>
+                <li>తెలుగు</li>
+                <li>ಕನ್ನಡ</li>
+                <li>اردو</li>
+                <li>हिन्दी</li>
+                <li>മലയാളം</li>
+                <li>සිංහල</li>
+                <li>ਪੰਜਾਬੀ</li>
+                <li>বাংলা</li>
+                <li>ગુજરાતી</li>
+            </ul>
+            <div class="content_curve"></div>
+            <ul class="footer_children">
+                <li>Sign Up</li>
+                <li>Log in</li>
+                <li>Messenger</li>
+                <li>Facebook Lite</li>
+                <li>Watch</li>
+                <li>Places</li>
+                <li>Games</li>
+                <li>Marketplace</li>
+                <li>Meta Pay</li>
+                <li>Oculus</li>
+                <li>Portal</li>
+                <li>Instagram</li>
+                <li>Bulletin</li>
+                <li>Local</li>
+                <li>Fundraisers</li>
+                <li>Services</li>
+                <li>Voting Information Centre</li>
+                <li>Groups</li>
+                <li>About</li>
+                <li>Create ad</li>
+                <li>Create Page</li>
+                <li>Developers</li>
+                <li>Careers</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+                <li>AdChoices</li>
+                <li>Terms</li>
+                <li>Help</li>
+                <li>Contact</li>
+            </ul>
+            <p class="copyright">Meta © 2022</p>
+        </div>
+    </footer>
 </body>
 </html>
